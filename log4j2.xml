@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <CustomLevels>
+        <CustomLevel name="PASS"  />
+        <CustomLevel name="FAIL"  />
+    </CustomLevels>
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout disableAnsi="false" pattern="%highlight{%d{yyyy-MM-dd HH:mm:ss}  [%-5level]  - %msg%n}{ FATAL=white,ERROR=red,PASS=green,FAIL=red,INFO=blue,DEBUG=white}"/>
+        </Console>
+        <File name="LogToFile" fileName="logs/app.log" immediateFlush="false" append="false">
+                <PatternLayout disableAnsi="true" pattern="%highlight{%d{yyyy-MM-dd HH:mm:ss}  %-5level  - %msg%n}{ FATAL=blue,ERROR=red,PASS=green,FAIL=red,INFO=blue,DEBUG=white}"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.mkyong" level="debug" additivity="false">
+            <AppenderRef ref="LogToFile"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+
+        <Root level="debug">
+            <AppenderRef ref="LogToFile"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,20 @@
+{
+  "AUT": "CodeLab",
+  "ExecutionEnvironment" : "dev",
+  "Browser": "chrome",
+  "PageLoadTimeout": 60,
+  "SeleniumCommandTimeout" : 20,
+  "EnvironmentDetails": [
+    {
+      "environment": "dev",
+      "url": "https://victorious-island-0ccd30b10.2.azurestaticapps.net/#team",
+      "logPath": "devlogpath"
+    },
+    {
+      "environment": "test",
+      "url": "https://victorious-island-0ccd30b10.2.azurestaticapps.net/#team",
+      "logPath": "testlogpath"
+    }
+  ]
+
+}

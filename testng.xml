@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Neudesic Java TestNG Framework">
+    <listeners>
+        <listener class-name="Utils.AllureListener" />
+    </listeners>
+    <test name="Sample First Test">
+        <classes>
+            <class name="FirstTestSample" />
+        </classes>
+    </test>
+    <test name="Sample Excel Test">
+        <classes>
+            <class name="SampleExcelTest" />
+        </classes>
+    </test>
+    <test name="Sample Log Test">
+        <classes>
+            <class name="SampleLogTests" />
+        </classes>
+    </test>
+    <test name="Sample First Testscript">
+        <classes>
+            <class name="Testscript" />
+        </classes>
+    </test>
+</suite>
